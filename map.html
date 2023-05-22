@@ -1,0 +1,46 @@
+<html lang="ja">
+
+<head>
+    <title>map</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+       <p>{{ msg }}</p>
+       <label for="titen">出発地点</label>
+       <form action="/count" method="post">
+              <input type="text" name="text_input">
+              <input type="submit" value="Count">
+       </form>
+
+     
+   
+
+
+
+<input type="text" id="titen" name="name" required
+       >
+</br>
+       <label for="mokuteki">目的地</label>
+
+<input type="text" id="kokuteki" name="name" required
+       ></br>
+       <label for="zikan">希望する時間</label>
+
+<input type="text" id="zikan" name="name" required
+       >分</br>
+       
+       <label for="yosan">予算</label>
+
+<input type="text" id="yosan" name="name" required
+       >円</br>
+
+
+<p>{{data}}<p>
+    {% for i in data %}
+        <p>{{ i }}</p>
+    {% endfor %}
+
+</body>
+
+</html>

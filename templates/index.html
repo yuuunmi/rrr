@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Character Count</title>
+</head>
+<body>
+    <h1>Character Count</h1>
+
+    <form action="/count_characters" method="post">
+        <label for="text">Enter Text:</label>
+        <input type="text" name="text" id="text" required>
+        <button type="submit">Count Characters</button>
+    </form>
+
+    {% if count %}
+        <h2>Result:</h2>
+        <p>The entered text contains {{ count }} characters.</p>
+    {% endif %}
+
+
+
+    <form action="/geocode" method="post">
+        <label for="text">場所</label>
+        <input type="text" name="text" id="text1" required>
+        <button type="submit">出発</button>
+    </form>
+    {% if lat %}
+        <h2>Result:</h2>
+        <p>The entered text contains {{ lat }} characters.</p>
+    {% endif %}
+
+
+
+</body>
+</html>
+
+
+
+
